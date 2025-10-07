@@ -8,8 +8,6 @@
 
 'use strict';
 
-module.exports = require('./lib/express');
-
 const express = require("express");
 const app = express();
 
@@ -21,4 +19,8 @@ const port = process.env.PORT || 3000;  // 👈 important!
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+
+
+module.exports = require('./lib/express');
+
 
